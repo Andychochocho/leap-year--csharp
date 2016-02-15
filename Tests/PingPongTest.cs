@@ -26,5 +26,12 @@ namespace PingPongProgram
       PingPong newPingPong = new PingPong();
       Assert.Equal(true, newPingPong.IsNumber(5));
     }
+
+    [Fact]
+    public void IsNumber_DivisibleByFifteen_true()
+    {
+      PingPong newPingPong = new PingPong();
+      Assert.Equal(true, newPingPong.IsNumber(15));
+    }
   }
 }

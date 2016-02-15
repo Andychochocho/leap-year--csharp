@@ -4,6 +4,10 @@ namespace PingPongProgram
   {
     public bool IsNumber(int number)
     {
+      if (number % 15 ==0)
+      {
+        return true;
+      }
       if (number % 3 == 0)
       {
         return true;
