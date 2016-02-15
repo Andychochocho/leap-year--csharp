@@ -28,7 +28,7 @@ namespace PingPongProgram.Objects
         int notChangedInt = i + 1;
         ChangedValues = notChangedInt.ToString();
         }
-        pingPongString = pingPongString + ChangedValues;
+        pingPongString = pingPongString + ChangedValues + ", ";
       }
       return pingPongString;
     }
