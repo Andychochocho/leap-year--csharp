@@ -8,6 +8,10 @@ namespace PingPongProgram
       {
         return true;
       }
+      else if (number % 5 == 0)
+      {
+        return true;
+      }
       else
       {
         return false;
