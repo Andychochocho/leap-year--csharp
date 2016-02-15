@@ -2,9 +2,16 @@ namespace LeapYears
 {
   public class LeapYear
   {
-    public bool IfLeapYear(int Year)
+    public bool IfLeapYear(int year)
     {
-      return true;
+      if (year % 4 == 0)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
     }
   }
 }
