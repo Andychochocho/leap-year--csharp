@@ -1,15 +1,15 @@
 using System;
-
 namespace PingPongProgram.Objects
 {
   public class PingPong
   {
-    public string IsNumber(int userInput)
+    public string IsNumber(string userInput)
     {
+      int userInputInt = int.Parse(userInput);
       string ChangedValues;
       string pingPongString = "";
 
-      for (var i = 0; i < userInput ; i++)
+      for (var i = 0; i < userInputInt ; i++)
       {
         if ((i + 1) % 15 == 0)
         {
