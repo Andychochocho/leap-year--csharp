@@ -1,25 +1,36 @@
-namespace PingPongProgram
+using System;
+
+namespace PingPongProgram.Objects
 {
   public class PingPong
   {
-    public bool IsNumber(int number)
+    public string IsNumber(int userInput)
     {
-      if (number % 15 ==0)
+      string ChangedValues;
+      string pingPongString = "";
+
+      for (var i = 0; i < userInput ; i++)
       {
-        return true;
+        if ((i + 1) % 15 == 0)
+        {
+          ChangedValues = "ping-pong";
+        }
+        else if ((i + 1) % 3 == 0)
+        {
+          ChangedValues = "ping";
+        }
+        else if ((i + 1) % 5 == 0)
+        {
+          ChangedValues = "pong";
+        }
+        else
+        {
+        int notChangedInt = i + 1;
+        ChangedValues = notChangedInt.ToString();
+        }
+        pingPongString = pingPongString + ChangedValues;
       }
-      if (number % 3 == 0)
-      {
-        return true;
-      }
-      else if (number % 5 == 0)
-      {
-        return true;
-      }
-      else
-      {
-        return false;
-      }
+      return pingPongString;
     }
   }
 }
